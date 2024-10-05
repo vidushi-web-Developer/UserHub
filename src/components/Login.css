@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://wallpaperset.com/w/full/b/3/3/67429.jpg");
+  background-size: cover;
+}
+
+.container-box {
+  height: max-content;
+  width: 30%;
+  background-color: transparent;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 30px rgba(132, 141, 171, 0.851);
+
+  border: 2px solid wheat;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.container-box .container-form {
+  position: relative;
+  margin: 20px 0;
+}
+
+.container-form input {
+  height: 2rem;
+  width: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.853);
+  border-radius: 40px;
+  background: #fff;
+  color: black;
+  padding-top: 5px;
+  padding-left: 20px;
+  /* padding: 20px 45px 20px 20px; */
+  margin-bottom: 10px;
+}
+
+.container-form input::placeholder {
+  color: black;
+  font-size: larger;
+}
+.container-form .icon {
+  position: absolute;
+  right: 50px;
+  top: 40%;
+
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.container-box .check {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.check label {
+  color: #ffffff;
+
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+.check input {
+  accent-color: #fff;
+  margin-right: 4px;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.check a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 30px;
+  font-size: 19px;
+}
+
+.check a:hover {
+  text-decoration: underline;
+}
+
+.container-box .btn {
+  height: 2rem;
+  width: 30%;
+  font-size: 20px;
+  color: bisque;
+  background-color: brown;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn:hover {
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+  color: black;
+}
+
+.register-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+.register-link p {
+  font-size: 18px;
+}
+.register-link a {
+  text-decoration: none;
+  color: white;
+}
+.register-link a:hover {
+  text-decoration: underline;
+  color: red;
+}
+.auth {
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.auth .btn2 {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.btn2 .ic {
+  color: #fff;
+}
+.btn2 .ic:hover {
+  height: 2rem;
+  width: 35px;
+  background-image: linear-gradient(
+    rgb(184, 37, 37),
+    rgb(15, 21, 195),
+    rgb(179, 13, 109)
+  );
+}
+
+.line {
+  height: 2px;
+  width: 43px;
+  margin-left: px;
+  border-bottom: 5px solid rgb(5, 5, 5);
+}

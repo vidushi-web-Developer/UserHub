@@ -1,0 +1,207 @@
+/* Container for the entire page */
+.gym-container {
+  text-align: center;
+  min-height: 100vh;
+  
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(189, 93, 93)/* Light background */
+}
+
+/* Title */
+.gym-container h1 {
+  text-shadow: 5px 5px 5px rgba(2, 2, 111, 0.3);
+  font-size: 40px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.btn-D2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+ height: 40px;
+ width: 170px;
+ font-size: 18px;
+ border: 2px solid white;
+ border-radius: 50px;
+ color: bisque;
+ background: linear-gradient(rgb(153, 43, 43), rgb(154, 8, 8), rgb(198, 91, 91));
+
+ transition: 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+
+}
+
+.btn-D2:hover {
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+  color: black;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background: linear-gradient(45deg, #003d7a, #002d54); /* Even darker gradient on active */
+  transform: translateY(0);
+}
+
+
+.gym-grid {
+  display: grid;
+  grid-template-rows: auto;
+  
+  margin: 0 auto;
+  max-width: 380px; 
+}
+
+/* Gym box style */
+.gym-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/* Hover effect for each gym box */
+.gym-box:hover {
+  transform: scale(1.05);
+  box-shadow: 20 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+/* Gym image style */
+.gym-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Gym name styling */
+.gym-box h2 {
+  font-size: 1.6rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Button to view details */
+.view-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 40%;
+  margin-left: 30%;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal overlay style */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content styling */
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  animation: modal-open 0.3s ease-out; /* Modal opening animation */
+}
+
+/* Close button */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.close-modal:hover {
+  color: #000;
+}
+
+/* Modal title styling */
+.modal-content h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #292828;
+}
+
+/* Modal list styles */
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-content li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.modal-content li strong {
+ 
+  font-weight: bold;
+  color: #007bff; 
+}
+
+/* Keyframe animation for modal open */
+@keyframes modal-open {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .gym-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .gym-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+  }
+
+  .gym-box {
+    padding: 15px;
+  }
+
+  .view-button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}

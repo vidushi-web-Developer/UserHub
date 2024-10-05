@@ -1,0 +1,103 @@
+.cont {
+  height: 100vh;
+  width: 100%;
+}
+
+.head .navb {
+  display: flex;
+
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  background: rgb(0, 0, 0);
+
+  height: 12vh;
+  box-sizing: border-box;
+}
+.navb .nav-item .nav-link {
+  text-decoration: none;
+
+  position: absolute;
+  top: 6%;
+  padding-right: 6rem;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+.navb .nav-item {
+  list-style-type: none;
+}
+.nav-item i {
+  margin-top: 1rem;
+  position: absolute;
+  top: 0%;
+  padding-left: 15px;
+  font-size: 1.4rem;
+  color: white;
+}
+.nav-item i:hover {
+  color: aquamarine;
+}
+.navb .nav-link:hover {
+  color: red;
+}
+
+.hula {
+  margin-top: 50px;
+  text-shadow: 3px 5px 4px hsl(0, 100%, 61%);
+  color: white;
+}
+.dashboard {
+  text-align: center;
+  padding: 20px;
+  background-color: #004d61;
+  color: white;
+  height: 84vh;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 3.5rem;
+}
+
+.dashboard-card {
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  height: 30vh;
+  width: 200px;
+  text-align: center;
+
+  transition: 0.1s;
+}
+
+.dashboard-card :hover {
+  transition: all ease 0.1s;
+  transform: scale(1.1);
+  z-index: 1;
+  box-shadow: 0px 0px 10px rgba(249, 247, 206, 0.851);
+  color: black;
+  background: #fff;
+  
+}
+.dashboard-card img {
+  width: 100%;
+  height: 36vh;
+  border-radius: 10px;
+  background-size: cover;
+  overflow: auto;
+}
+
+.dashboard-card button {
+  margin-top: -80px;
+  padding: 10px 20px;
+  background-color: #222526;
+  filter: blur(0.1px);
+  color: white;
+  border: none;
+
+  cursor: pointer;
+}

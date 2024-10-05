@@ -1,0 +1,60 @@
+.box {
+  height: max-content;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  text-align: center;
+  width: 220px;
+ 
+  background-color: #f9f9f9;
+}
+
+  .box:hover {
+  border: 5px solid rgba(227, 104, 10, 0.953);
+  background: linear-gradient(rgb(252, 250, 250), beige, rgb(255, 250, 250) );
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.box-image {
+  width: 100%;
+  height: 15rem;
+  /* border-radius: 50%; */
+  /* margin-bottom: 10px; */
+  border: 2px solid black;
+}
+
+.box h3 {
+margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.box-content p {
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.box-buttons {
+  margin-top: 10px;
+}
+
+.box-buttons button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #6200ea;
+  color: white;
+}
+
+.box-buttons button:hover {
+  background-color: #3700b3;
+}
+
+.selected-message{
+   text-shadow: 3px 5px 4px rgb(182, 29, 55);
+   font-size: 10px;
+}

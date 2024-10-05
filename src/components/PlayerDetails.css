@@ -1,0 +1,67 @@
+
+.app {
+  padding: 20px;
+  background-image: url("https://img.freepik.com/free-vector/minimal-geometric-stripe-shape-background_1409-1014.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.btn-D {
+  margin-bottom: 10px;
+ height: 40px;
+ width: 170px;
+ font-size: 18px;
+ border: 2px solid white;
+ border-radius: 50px;
+ color: bisque;
+ background: linear-gradient(rgb(153, 43, 43), rgb(154, 8, 8), rgb(198, 91, 91));
+
+ transition: 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+
+}
+.apph1{
+  color: black;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-shadow: 5px 5px 5px rgba(172, 172, 180, 0.3);
+}
+
+.btn-D:hover {
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+  color: black;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background: linear-gradient(45deg, #003d7a, #002d54); /* Even darker gradient on active */
+  transform: translateY(0);
+}
+
+.box-container {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
+/* PlayerDetails.css  */
+
+ .pagination-buttons {
+ 
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.pagination-buttons button {
+ 
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pagination-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
